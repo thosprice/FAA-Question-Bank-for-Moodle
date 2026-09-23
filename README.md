@@ -5,11 +5,13 @@ The following is derived from https://claude.ai/chat/34d41199-65e1-4ced-9063-b6d
 Figures: Host public-facing version on Github. This is the definitive version.  Instructions to implement local hosting directed to whoever is running the BTHS server take the form "Please place this file Github_link on the local server".  Moodle XML can have links of the form ```html<img src="http://10.65.x.x/figures/Figure12.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/you/repo/main/figures/Figure12.png';"> ```to rely on the Github as a fallback until local becomes available.  
 
 A link reference page for student reference in the case of broken links can be coded similarly to rely on either hosting location. The link reference page needs to be generated automatically from the manifest.  The link reference page itself can be hosted at multiple pages with coding similar to 
-```html <p>
+```html
+ <p>
   <a id="fig1" href="http://10.65.x.x/figures/Figure1.png" target="_blank">Figure 1</a>
   <img src="http://10.65.x.x/figures/Figure1.png" style="display:none"
        onerror="document.getElementById('fig1').href='https://raw.githubusercontent.com/you/repo/main/figures/Figure1.png';">
-</p>```
+</p>
+```
 Both gClassroom and Moodle might strip this code
 
 Moodle may not support `<img src="..." onerror="">`, 'If it gets stripped, the more durable version is a small site-wide script (via Moodle's admin "Additional HTML"/custom JS injection, if you have access to that setting) that scans the page for `<img>` tags matching your local figure-URL pattern and attaches the fallback behavior at page-load time instead'
