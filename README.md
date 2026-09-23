@@ -12,7 +12,7 @@ A link reference page for student reference in the case of broken links can be c
 </p>```
 Both gClassroom and Moodle might strip this code
 
-Moodle may not support ```html<img src="..." onerror="">```, 'If it gets stripped, the more durable version is a small site-wide script (via Moodle's admin "Additional HTML"/custom JS injection, if you have access to that setting) that scans the page for ```html<img>``` tags matching your local figure-URL pattern and attaches the fallback behavior at page-load time instead'
+Moodle may not support `<img src="..." onerror="">`, 'If it gets stripped, the more durable version is a small site-wide script (via Moodle's admin "Additional HTML"/custom JS injection, if you have access to that setting) that scans the page for `<img>` tags matching your local figure-URL pattern and attaches the fallback behavior at page-load time instead'
 
 Action items: 1) explore fallback link URLs in our Moodle implementation.  
 2) If this works, the local and Github URLs can both be automatically placed into the xml from the spreadsheet. This will only need to be updated when the local IP changes. 
