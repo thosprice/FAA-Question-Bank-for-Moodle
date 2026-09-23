@@ -72,5 +72,3 @@ Figure82.pdf
 GleimFigure44.png
 GleimFigure45.png
 GleimFigure46.png
-manifest.txt
-_Readme.docx
