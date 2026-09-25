@@ -1,7 +1,7 @@
 # FAA-Question-Bank-for-Moodle
 
 This repo supports the Question Bank of FAA Private Pilot Airplane exam questions developed for Flight School at BTHS.
-<a href="https://docs.google.com/spreadsheets/d/1qbx3Un-CqJzZfCC9y3pf_Qwq73k7j1VNou3_EXNUo9s/edit?gid=458380809#gid=458380809">The canonical version of the question bank exists here</a>.  All corrections, additions, or other changes need to be made in the spreadsheet. Any downstream changes are generated programmatically downstream.
+<p><a href="https://docs.google.com/spreadsheets/d/1qbx3Un-CqJzZfCC9y3pf_Qwq73k7j1VNou3_EXNUo9s/edit" target="_blank">The canonical version of the question bank exists here</a>.  All corrections, additions, or other changes need to be made in the spreadsheet. Any downstream changes are generated programmatically downstream.
 
 The following is derived from https://claude.ai/chat/34d41199-65e1-4ced-9063-b6d0ad3c930e
 
