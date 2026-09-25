@@ -1,5 +1,8 @@
 # FAA-Question-Bank-for-Moodle
 
+This repo supports the Question Bank of FAA Private Pilot Airplane exam questions developed for Flight School at BTHS.
+<a href="https://docs.google.com/spreadsheets/d/1qbx3Un-CqJzZfCC9y3pf_Qwq73k7j1VNou3_EXNUo9s/edit?gid=458380809#gid=458380809">The canonical version of the question bank exists here</a>.  All corrections, additions, or other changes need to be made in the spreadsheet. Any downstream changes are generated programmatically downstream.
+
 The following is derived from https://claude.ai/chat/34d41199-65e1-4ced-9063-b6d0ad3c930e
 
 Figures: Host public-facing version on Github. This is the definitive version.  Instructions to implement local hosting directed to whoever is running the BTHS server take the form "Please place this file Github_link on the local server".  Moodle XML can have links of the form ```html<img src="http://10.65.x.x/figures/Figure12.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/you/repo/main/figures/Figure12.png';"> ```to rely on the Github as a fallback until local becomes available.  
