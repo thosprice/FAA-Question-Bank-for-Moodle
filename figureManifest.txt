@@ -64,7 +64,7 @@ Figures/Figure71.png
 Figures/Figure72.png
 Figures/Figure75.png
 Figures/Figure76.png
-Figures/Figure78a.jpg
+Figures/Figure78.jpg
 Figures/Figure79.png
 Figures/Figure80.pdf
 Figures/Figure81.png
