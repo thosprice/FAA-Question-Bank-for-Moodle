@@ -8,7 +8,7 @@ Figures/Figure04.jpg
 Figures/Figure05.jpg
 Figures/Figure06.jpg
 Figures/Figure07.jpg
-Figures/Figure08.jpg
+Figures/Figure08.pdf
 Figures/Figure09.jpg
 Figures/Figure12.jpg
 Figures/Figure13.jpg
