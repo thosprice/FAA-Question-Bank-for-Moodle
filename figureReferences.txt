@@ -64,4 +64,5 @@ Figure 80:Figures/Figure80.pdf
 Figure 81:Figures/Figure81.png
 Figure 82:Figures/Figure82.pdf
 Figure 9:Figures/Figure09.jpg
+Legend 1:Figures/FAA_Legend.pdf
 the Chart Supplement Legend:Figures/ChartSupplementLegendBW.pdf
