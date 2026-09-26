@@ -3,7 +3,6 @@ Figure 12:Figures/Figure12.jpg
 Figure 13:Figures/Figure13.jpg
 Figure 14:Figures/Figure14.jpg
 Figure 15:Figures/Figure15.jpg
-Figure 16:Figures/Figure16.jpg
 Figure 17:Figures/Figure17.jpg
 Figure 18:Figures/Figure18.jpg
 Figure 2:Figures/Figure02.jpg

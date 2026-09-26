@@ -59,7 +59,6 @@ Figures/Figure75.png
 Figures/Figure76.png
 Figures/Figure78.jpg
 Figures/Figure79.png
-Figures/Figure80.jpg
 Figures/Figure80.png
 Figures/Figure81.png
 Figures/Figure82.png
