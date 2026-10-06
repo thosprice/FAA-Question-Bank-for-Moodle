@@ -3,7 +3,7 @@ title:         Example – Weather and Human Factors Quiz
 R4:            Preflight preparation/Weather
 R2:            Preflight preparation/Human factors
 #112
-attempts:      3
+attempts:      4
 score:         best
 feedback:      missed
 feedback-when: completed
