@@ -1,0 +1,12 @@
+// Example assignment config. The link is <web app URL>?a=example-quiz
+title:         Instrument and weather reporting questions
+R2:            Preflight preparation/Weather services
+R6:            Navigation, instruments, and instrument maneuvers/Instruments and instrument maneuvers
+// attempts:      
+score:         best
+feedback:      missed
+feedback-when: completed
+// time:       30
+// open:       2026-10-12 08:00
+// close:      2026-10-19 23:59
+// key:        required
