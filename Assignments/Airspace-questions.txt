@@ -1,5 +1,5 @@
 // Example assignment config. The link is <web app URL>?a=example-quiz
-title:         Instrument and weather reporting questions
+title:         Airspace and review questions
 R2:            Preflight preparation/Weather services
 R2:            Navigation, instruments, and instrument maneuvers/Instruments and instrument maneuvers
 R6:            Preflight preparation/Airspace and sectional charts
