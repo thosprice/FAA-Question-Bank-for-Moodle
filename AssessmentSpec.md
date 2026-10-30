@@ -1,6 +1,6 @@
 # Assessment Quiz — Specification
 
-Status: draft for implementation · Last revised 2026-10-08 (rev. 6: performance changes, autosave sequencing, archive, storage gauge, bank cache)
+Status: draft for implementation · Last revised 2026-10-30 (rev. 7: draw lines can combine several categories)
 
 This document specifies the **assessment** version of the quiz web app: scored assignments and in-class tests drawn from the FAA question bank. It is a separate Apps Script project from the **practice quiz** and shares no code or deployment with it. Each project has its own copy of the shared logic (question formatting, figure links, grading), so a change to one never affects the other.
 
@@ -122,13 +122,24 @@ key:           required
 
 | Line | Meaning |
 |---|---|
-| `Rn: category` | Draw *n* random questions from that category. `R:` alone means 1. |
+| `Rn: category` | Draw *n* random questions from that category. `R:` alone means 1. The colon may be left out when a number is given (`R2 category`). |
+| `Rn: cat1; cat2; …` | Draw *n* random questions from one pool made of all the listed categories together. Categories are separated by semicolons. |
+| `Rn: [ cat1; cat2; … ]` | The same, with the list in square brackets so it can continue over several lines. Inside the brackets, line breaks count as spaces and `//` comment lines are skipped. |
 | `#nnn` | Include question *nnn* (column A). |
+
+Example:
+
+```
+R2: Preflight preparation/Weather services; Navigation, instruments, and instrument maneuvers/Instruments and instrument maneuvers
+R3: [ Preflight preparation/Weather;
+      Navigation, instruments, and instrument maneuvers/Navigation ]
+```
 
 - Lines may appear in any order and any number of times. Each attempt is assembled from all of them.
 - **Category matching:** a category name matches itself and every category beneath it. `R3: Preflight preparation` draws from all of `Preflight preparation/…`. Matching ignores capitalization and extra spaces.
 - **No repeats within an attempt:** a question added with `#nnn` is excluded from random draws, and overlapping `R` lines never draw the same question twice.
-- If a category has fewer unused questions than requested, the assignment is considered misconfigured (§3.5).
+- Each category in a list must match at least one question; an unknown one is reported by name.
+- If a line's pool has fewer unused questions than requested, the assignment is considered misconfigured (§3.5).
 
 ### 3.4 Settings
 
