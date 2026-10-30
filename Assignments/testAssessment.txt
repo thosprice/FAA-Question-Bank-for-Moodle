@@ -1,6 +1,7 @@
 // testing random question pools with unrelated categories.
 title:         Airspace and review questions
-R30:           [ Preflight preparation/Weather services;  // 10 random questions from a big pool of these 3 categories
+// 10 random questions from a big pool of these 3 categories
+R30:           [ Preflight preparation/Weather services;  
             Navigation, instruments, and instrument maneuvers/Instruments and instrument maneuvers;
             Preflight preparation]
 // attempts:      
