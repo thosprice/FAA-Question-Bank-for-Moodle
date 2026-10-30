@@ -1,0 +1,13 @@
+// testing random question pools with unrelated categories.
+title:         Airspace and review questions
+R30:           [ Preflight preparation/Weather services;  // 10 random questions from a big pool of these 3 categories
+            Navigation, instruments, and instrument maneuvers/Instruments and instrument maneuvers;
+            Preflight preparation]
+// attempts:      
+score:         best
+feedback:      missed
+feedback-when: completed
+// time:       30
+// open:       2026-10-29 08:00
+// close:      2026-11-14 23:59
+// key:        required
