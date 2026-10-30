@@ -98,7 +98,7 @@ Configs are cached for 5 minutes, so an edit can take that long to reach student
 
 ### 3.2 Format
 
-One setting per line, `name: value`. Blank lines and lines starting with `//` are ignored. Names are case-insensitive.
+One setting per line, `name: value`. Blank lines and lines starting with `//` (i.e., comments) are ignored. Names are case-insensitive.
 
 ```
 title:         Unit 3 – Weather Systems Quiz
