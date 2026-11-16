@@ -1,6 +1,6 @@
 # Assessment Quiz — Specification
 
-Status: draft for implementation · Last revised 2026-10-30 (rev. 7: draw lines can combine several categories)
+Status: draft for implementation · Last revised 2026-11-16 (rev. 8: results file follows the assignment title)
 
 This document specifies the **assessment** version of the quiz web app: scored assignments and in-class tests drawn from the FAA question bank. It is a separate Apps Script project from the **practice quiz** and shares no code or deployment with it. Each project has its own copy of the shared logic (question formatting, figure links, grading), so a change to one never affects the other.
 
@@ -262,6 +262,8 @@ Whenever an attempt ends, however it ends, the student receives a receipt email.
 ## 5. Results spreadsheet
 
 One spreadsheet per assignment, named after its title, created in the `RESULTS_FOLDER_ID` folder (§1.1) when the first attempt starts. The script stores its ID and reuses it; a script lock prevents duplicates when the first submissions arrive simultaneously. Archive the folder at the end of the semester.
+
+**Keeping the name in step with the title.** The file is named `<title> – Results`. When the config's `title` changes, the script renames the file to match, but only if it still has the name the script gave it. A file renamed by hand (for example, to "Airspace Questions - Results F2026") is left alone. The admin page then notes that the title and the file name no longer match, with buttons to **Rename** the file to match or **Keep the current name**. Keeping the current name silences the note for that title, and later title changes still won't rename it. Files created before automatic renaming existed are treated as renamed by hand: the admin page offers the Rename button instead of renaming them itself. Renaming or moving the file is always safe, because the script finds it by its ID.
 
 ### 5.1 `Results` tab — one row per finished attempt
 
